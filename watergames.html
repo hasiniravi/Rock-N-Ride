@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Games</title>
+    <link rel="icon" href="image/20221220_094229.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<style>
+  *
+  {
+    margin:0%;
+    padding: 0%;
+  }
+
+
+  .navbar {
+        background-color: white !important;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        border-style: outset;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .navbar img {
+
+        margin-right: 320px;
+        margin-top: 2px;
+        height: 100px;
+        width: 182px;
+        background-image: url("image/20221220_094229.png");
+        background-size: cover;
+
+
+    }
+
+    .navbar-nav li a {
+        color:  rgb(0, 0, 139) !important;
+        font-weight: bold;
+
+    }
+
+    .navbar-nav li a:hover {
+        color: #f04107 !important;
+        font-weight: bold;
+
+    }
+
+  
+    .text-center1 {
+    color: rgb(0, 0, 139);
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+    padding-top: 25px;
+
+  }
+
+  .text-center2 {
+    color: rgb(76, 76, 76);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+
+
+  }
+
+    .text-center3 {
+        color: #f04107;
+        font-size: 25px;
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: center;
+        padding-top: 25px;
+
+    }
+</style>
+<body>
+
+ <!--  header  -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="image/20221220_094229.png " width="100%">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ride.html" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Ride
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="drygames.html">Dry Games</a></li>
+                        <li><a class="dropdown-item" href="watergames.html">Water Games</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dining.html">Dining</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rooms.html">PartyRooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!--  banner  -->
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1631800744177-0e434940e0c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+
+
+<!--   heading  -->
+
+
+
+<p data-aos="zoom-in-up" class="text-center1">Rock N Ride Dry Games</p>
+<p data-aos="zoom-in-up" class="text-center2">"Rock N Ride Has Unlimited Gry Games And Funs Close Your Eyes And Enjoy Them All"</p>
+
+
+<!--  card  -->
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div data-aos="flip-up" class="col">
+            <img src="https://wallpaperaccess.com/full/1933718.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Water Slide</p>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div data-aos="flip-up" class="col col-lg-6 col-md-6 col-sm-12 col-12 ">
+            <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_55,w_1055,h_594,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/wonderla-bengaluru/Bengaluru_-_Jungle_Lagoon" width="700px" height="350px">
+            <p class="text-center3 ">Jungle Lahoon</p>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div data-aos="flip-up" class="col">
+            <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_65,w_1618,h_911,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/wonderla-bengaluru/Bengaluru_-_Banded_Kraits" width="700px" height="350px">
+            <p class="text-center3 ">Korneto</p>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/ndObENW7Izo/maxresdefault.jpg"width="700px" height="350px">
+            <p class="text-center3 ">Drop Loop</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/QqZZntZ7n0s/maxresdefault.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Fun Racer Slide</p>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div data-aos="flip-up" class="col">
+            <img src="https://www.rapidswaterpark.com/content/uploads/lazy-river-9.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Lazy River</p>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/JzIK1Ba_I04/maxresdefault.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Big Boomerang</p>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/sSsiqq569e0/maxresdefault.jpg"width="700px" height="350px">
+            <p class="text-center3 ">Harakiri</p>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/FyJhooYVry0/maxresdefault.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Rain Dance</p>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container pt-3 mt-3">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div data-aos="flip-up" class="col">
+            <img src="https://i.ytimg.com/vi/1yi6g_mB4xk/maxresdefault.jpg" width="700px" height="350px">
+            <p class="text-center3 ">Water Wave Pool</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+
+<footer class="bg-light text-center text-white h-30">
+    <div class="text-center p-3" style="background-color: rgb(61, 61, 63);">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+            class="fa-brands fa-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+  </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(0, 0, 139);">
+      © 2023 Copyright:
+      <a class="text-white" href="#">rocknride.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
